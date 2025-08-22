@@ -1,7 +1,7 @@
 baseURL      = "https://cornelis.app/"
 languageCode = "en-us"
 title        = "Cornelis's hub"
-theme        = "LucentLink"
+theme        = "LucentLink-Hugo"
 minVersion   = "0.115.0"
 
 [params]
