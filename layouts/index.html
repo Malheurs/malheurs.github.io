@@ -1,88 +1,40 @@
-{{ define "main" }}
-<header class="hero">
-    <div class="hero-content">
-        <h1 class="hero-title">{{ .Site.Title }}</h1>
-        <p class="hero-subtitle">{{ .Site.Params.description }}</p>
-        <div class="status-indicator">
-            <span class="status-dot"></span>
-            <span>Tous les services sont opérationnels</span>
-        </div>
-    </div>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation" id="bgAnimation"></div>
 
-<main class="services">
-    <div class="services-grid">
+    <div class="container mx-auto px-4 py-12 max-w-md">
+        <!-- Profile Section -->
+        {{ partial "profile.html" . }}
+
+        <!-- Links Section -->
+        {{ partial "link-card.html" . }}
+
+        <!-- Spotify Embed -->
+        <!-- {{ partial "spotify-playlist.html" . }}-->
+
+        <!-- Messaging Etiquette section -->
+        <!-- {{ partial "messaging-etiquette.html" . }} -->
+          
         
-        <!-- Emby -->
-        <a href="https://emby.cornelis.app" class="service-card" data-service="emby">
-            <div class="service-icon">
-                <i class="fas fa-play-circle"></i>
-            </div>
-            <h3>Emby</h3>
-            <p>Streaming multimédia</p>
-            <span class="service-status online">En ligne</span>
-        </a>
+        <!-- Embed with hue-shift filter -->
+        <!-- style="filter: hue-rotate(150deg) saturate(0.6) brightness(0.9);" -->
 
-        <!-- RetroAssembly -->
-        <a href="https://retro.cornelis.app" class="service-card" data-service="retro">
-            <div class="service-icon">
-                <i class="fas fa-gamepad"></i>
-            </div>
-            <h3>RetroAssembly</h3>
-            <p>Jeux rétro</p>
-            <span class="service-status online">En ligne</span>
-        </a>
 
-        <!-- NAS Admin -->
-        <a href="https://nas.cornelis.app" class="service-card" data-service="nas">
-            <div class="service-icon">
-                <i class="fas fa-server"></i>
-            </div>
-            <h3>NAS Admin</h3>
-            <p>Administration Synology</p>
-            <span class="service-status online">En ligne</span>
-        </a>
+        <!-- About Me section (If you want to write about yourself, uncomment the section below)--> 
+        {{ partial "about.html" . }}
 
-        <!-- Portainer (exemple) -->
-        <a href="https://docker.cornelis.app" class="service-card" data-service="docker">
-            <div class="service-icon">
-                <i class="fab fa-docker"></i>
-            </div>
-            <h3>Portainer</h3>
-            <p>Gestion Docker</p>
-            <span class="service-status online">En ligne</span>
-        </a>
+        <!-- Instructions section (After you're done adding your links, remove or comment the line below) -->
+        <!-- {{ partial "Instructions.html" . }} -->
 
-        <!-- Nextcloud (exemple) -->
-        <a href="https://cloud.cornelis.app" class="service-card" data-service="cloud">
-            <div class="service-icon">
-                <i class="fas fa-cloud"></i>
-            </div>
-            <h3>Nextcloud</h3>
-            <p>Cloud personnel</p>
-            <span class="service-status online">En ligne</span>
-        </a>
-
-        <!-- Monitoring (exemple) -->
-        <a href="https://monitor.cornelis.app" class="service-card" data-service="monitor">
-            <div class="service-icon">
-                <i class="fas fa-chart-line"></i>
-            </div>
-            <h3>Monitoring</h3>
-            <p>Surveillance système</p>
-            <span class="service-status online">En ligne</span>
-        </a>
-
+        <footer class="text-center text-xs opacity-60">
+            © 2025 LucentLink | Made with ❤️
+        </footer>
+        
     </div>
-</main>
 
-<footer class="footer">
-    <div class="footer-content">
-        <p>&copy; 2025 Cornelis's Hub - Powered by Hugo & Cloudflare</p>
-        <div class="footer-stats">
-            <span>Uptime: 99.9%</span>
-            <span>Dernière MàJ: {{ now.Format "02/01/2006 15:04" }}</span>
-        </div>
-    </div>
-</footer>
-{{ end }}
+    <script src="js/script.js"></script>
+</body>
+</html>

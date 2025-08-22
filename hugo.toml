@@ -1,3 +1,10 @@
-baseURL = 'https://cornelis.app/'
-languageCode = 'fr-fr'
-title = 'Cornelis Hub'
+baseURL      = "https://cornelis.app/"
+languageCode = "en-us"
+title        = "Cornelis's hub"
+theme        = "LucentLink-Hugo"
+minVersion   = "0.115.0"
+
+[params]
+  description     = "A simple, customizable, and responsive Linktree-style landing page built using Hugo, Tailwind CSS, and Font Awesome."
+[outputs]
+  home = ["HTML"]

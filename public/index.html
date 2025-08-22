@@ -1,105 +1,127 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="en">
+    <head>
 	<meta name="generator" content="Hugo 0.147.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenue sur Cornelis&#39;s Hub | Cornelis Hub</title>
-    <meta name="description" content="">
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cornelis&#39;s hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  
+
 <body>
-    <div class="container">
+    
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <div class="container mx-auto px-4 py-12 max-w-md">
         
-<header class="hero">
-    <div class="hero-content">
-        <h1 class="hero-title">Cornelis Hub</h1>
-        <p class="hero-subtitle"></p>
-        <div class="status-indicator">
-            <span class="status-dot"></span>
-            <span>Tous les services sont opérationnels</span>
+        
+<div class="flex flex-col items-center mb-8">
+    
+      
+      
+      <img src="images/img.jpg"
+           alt="Cornelis"
+           class="profile-pic mb-4">
+    
+    <h1 class="text-3xl font-bold mb-2 text-center" style="color: var(--text-color)">
+      Cornelis
+    </h1>
+    <p class="text-center opacity-80 mb-6">Blaireau de première | Gros geekos</p>
+  
+    <div class="flex flex-wrap justify-center gap-4 mb-8 social-icons">
+      
+        <a href="https://mamot.fr/@Cornelis" class="text-xl" target="_blank" rel="noopener">
+          <i class="fab fa-mastodon icon"></i>
+        </a>
+      
+        <a href="https://github.com/Malheurs" class="text-xl" target="_blank" rel="noopener">
+          <i class="fab fa-github icon"></i>
+        </a>
+      
+    </div>
+</div>
+
+        
+        <div class="space-y-4 mb-8">
+
+    
+
+      <a href="https://emby.cornelis.app" class="block link-card p-4 flex items-center">
+        <div class="w-10 h-10 flex items-center justify-center mr-4">
+          <i class="fas fa-play-circle icon text-xl"></i>
         </div>
-    </div>
-</header>
-
-<main class="services">
-    <div class="services-grid">
-        
-        
-        <a href="https://emby.cornelis.app" class="service-card" data-service="emby">
-            <div class="service-icon">
-                <i class="fas fa-play-circle"></i>
-            </div>
-            <h3>Emby</h3>
-            <p>Streaming multimédia</p>
-            <span class="service-status online">En ligne</span>
-        </a>
-
-        
-        <a href="https://retro.cornelis.app" class="service-card" data-service="retro">
-            <div class="service-icon">
-                <i class="fas fa-gamepad"></i>
-            </div>
-            <h3>RetroAssembly</h3>
-            <p>Jeux rétro</p>
-            <span class="service-status online">En ligne</span>
-        </a>
-
-        
-        <a href="https://nas.cornelis.app" class="service-card" data-service="nas">
-            <div class="service-icon">
-                <i class="fas fa-server"></i>
-            </div>
-            <h3>NAS Admin</h3>
-            <p>Administration Synology</p>
-            <span class="service-status online">En ligne</span>
-        </a>
-
-        
-        <a href="https://docker.cornelis.app" class="service-card" data-service="docker">
-            <div class="service-icon">
-                <i class="fab fa-docker"></i>
-            </div>
-            <h3>Portainer</h3>
-            <p>Gestion Docker</p>
-            <span class="service-status online">En ligne</span>
-        </a>
-
-        
-        <a href="https://cloud.cornelis.app" class="service-card" data-service="cloud">
-            <div class="service-icon">
-                <i class="fas fa-cloud"></i>
-            </div>
-            <h3>Nextcloud</h3>
-            <p>Cloud personnel</p>
-            <span class="service-status online">En ligne</span>
-        </a>
-
-        
-        <a href="https://monitor.cornelis.app" class="service-card" data-service="monitor">
-            <div class="service-icon">
-                <i class="fas fa-chart-line"></i>
-            </div>
-            <h3>Monitoring</h3>
-            <p>Surveillance système</p>
-            <span class="service-status online">En ligne</span>
-        </a>
-
-    </div>
-</main>
-
-<footer class="footer">
-    <div class="footer-content">
-        <p>&copy; 2025 Cornelis's Hub - Powered by Hugo & Cloudflare</p>
-        <div class="footer-stats">
-            <span>Uptime: 99.9%</span>
-            <span>Dernière MàJ: 22/08/2025 20:41</span>
+        <div>
+          <h3 class="font-medium">Emby</h3>
+          <p class="text-sm opacity-70">Emby media server</p>
         </div>
-    </div>
-</footer>
+      </a>
 
+    
+
+      <a href="https://retro.cornelis.app" class="block link-card p-4 flex items-center">
+        <div class="w-10 h-10 flex items-center justify-center mr-4">
+          <i class="fas fa-gamepad icon text-xl"></i>
+        </div>
+        <div>
+          <h3 class="font-medium">RetroAssembly</h3>
+          <p class="text-sm opacity-70">A personal retro game cabinet in your browser</p>
+        </div>
+      </a>
+
+    
+
+      <a href="https://nas.cornelis.app" class="block link-card p-4 flex items-center">
+        <div class="w-10 h-10 flex items-center justify-center mr-4">
+          <i class="fas fa-server icon text-xl"></i>
+        </div>
+        <div>
+          <h3 class="font-medium">NAS</h3>
+          <p class="text-sm opacity-70">Manage the NAS</p>
+        </div>
+      </a>
+
+    
+
+      <a href="mailto:malheurcornelis@proton.me" class="block link-card p-4 flex items-center">
+        <div class="w-10 h-10 flex items-center justify-center mr-4">
+          <i class="fas fa-envelope icon text-xl"></i>
+        </div>
+        <div>
+          <h3 class="font-medium">Contact Me</h3>
+          <p class="text-sm opacity-70"></p>
+        </div>
+      </a>
+
+    
+
+</div>
+
+        
+        
+
+        
+        
+          
+        
+        
+        
+
+
+         
+        
+
+        
+        
+
+        <footer class="text-center text-xs opacity-60">
+            © 2025 LucentLink | Made with ❤️
+        </footer>
+        
     </div>
-    <script src="/js/main.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
