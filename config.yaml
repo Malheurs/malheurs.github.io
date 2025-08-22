@@ -1,0 +1,13 @@
+baseURL: 'https://cornelis.app'
+languageCode: 'fr-fr'
+title: 'Cornelis's Hub'
+theme: ''
+
+params:
+  description: 'Hub personnel - Accès à mes services'
+  author: 'Cornelis'
+  
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
