@@ -29,7 +29,7 @@ links:
   - href: "https://kavita.cornelis.app"
     icon: "fas fa-book"
     title: "Kavita"
-    description: "Kavita library"
+    description: "Kavita digital library for books & comics"
   - href: "https://retro.cornelis.app"
     icon: "fas fa-gamepad"
     title: "RetroAssembly"
