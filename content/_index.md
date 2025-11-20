@@ -14,10 +14,6 @@ socials:
 
 # Link cards
 links:
-  - href: "https://emby.cornelis.app"
-    icon: "fas fa-play-circle"
-    title: "Emby"
-    description: "Emby media server"
   - href: "https://jellyfin.cornelis.app"
     icon: "fas fa-play-circle"
     title: "Jellyfin"
